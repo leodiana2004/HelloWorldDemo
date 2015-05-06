@@ -28,8 +28,7 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPressed(sender: AnyObject) {
         labelDisplay.text = "HelloWorld \(counter++)"
-        
-    }
+        self.performSegueWithIdentifier("changeTo", sender: self)    }
 
 }
 
